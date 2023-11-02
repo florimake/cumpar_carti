@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}" />
+    <title>cumparcarti</title>
+    <title>cumpar carti</title>
+    <title>achizitii carti</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Contact: </h1>
+        {% for contact in contacte %}
+            <p>{{contact.nume}} - <input type="button" value="{{contact.tel}}"></p>
+        {% endfor %}
+    </div>
+    <div id="paragrafe">
+        {% for paragraf in paragrafe %}
+            <div id="paragraf">
+                <H2>{{paragraf.titlu}}</H2>
+                <p>{{paragraf.paragraf}}</p>
+                <p>{{paragraf.poza}}</p>
+                <img src="{{paragraf.poza}}" alt="none" hight="250px">
+            </div>
+        {% endfor %}
+    </div>
+    <div class="underConstruction">
+        <h1>Under Construction !!!</h1>
+        <img src="{% static 'construction-LPT/under construction.jpg' %}" alt="">
+    </div>
+    
+</body>
+</html>
