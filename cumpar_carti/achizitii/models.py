@@ -7,7 +7,7 @@ class Paragraf(models.Model):
     titlu = models.CharField(max_length=150)
     paragraf = models.TextField()
     slug = models.SlugField(unique=True)
-    poza = models.ImageField(upload_to='static/images', null=True)
+    poza = models.ImageField(upload_to='achizitii/static/images', null=True)
     
     class Meta:
         db_table = ''
