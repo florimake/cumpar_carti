@@ -33,3 +33,26 @@
     {% comment %} cumpar carti, cumparcarti, vandcarti, vand carti, cumpar cartii, cumparcartii, achizitionez carti, achizitionezcarti, carti anticariat, anticariat {% endcomment %}
 </body>
 </html>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11402046384">
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11402046384');
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+        'send_to': 'AW-11402046384/9_DtCJiMovQYELDX9bwq',
+        'event_callback': callback
+        });
+        return false;
+    }
+</script>
